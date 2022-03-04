@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -8,10 +8,13 @@ function App() {
         style={{
           borderBottom: "solid 1px",
           paddingBottom: "1rem",
+
         }}
       >
+        <Link to="/">Home</Link> |{" "}
         <Link to="/invoices">Invoices</Link> |{" "}
         <Link to="/expenses">Expenses</Link>
+
       </nav>
       <Outlet />
     </div>
